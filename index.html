@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <!-- CSS custom external -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap source -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- header dan navbar from bootstrap -->
+    <header id="header">
+        <nav class="bg-primary navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            <a class="logo" href="#header" id="header">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a id="nav" class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a id="nav" class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a id="nav" class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- konten utama -->
+    <main>
+
+        <!-- Home section -->
+        <section id="home">
+            <h1>Hello <span id="welcome-speech"></span>, Welcome to My Website</h1>
+            <p>Website ini saya buat dengan menggunakan HTML, styling dengan CSS dan sedikit bootstrap untuk navbar yang responsif.</p>
+
+            <figure class="banner-img">
+                <img src="https://img.freepik.com/premium-vector/front-end-developer-typographic-header_277904-11487.jpg?w=826" alt="Banner Image">
+                <figcaption><cite>Source: freepik.com</cite></figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <!-- About section -->
+        <section id="about">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quod blanditiis unde animi, possimus optio cumque laboriosam porro esse maxime doloribus, amet tempora illo autem fugit praesentium alias aspernatur quas.</p>
+        </section>
+
+        <hr>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>Let's make something great together.</p>
+            <form class="form-field">
+                <fieldset>
+                    <legend>Message Us!</legend>
+                    <label for="name">Nama:</label><br>
+                    <input class="input" type="text" id="name" name="name" placeholder="Nama" required><br>
+                    <label for="date-of-birth">Tangal Lahir:</label><br>
+                    <input class="input" type="date" name="date-of-birth" id="date-of-birth"><br>
+                    <label>Jenis Kelamin: </label><br>
+                    <input type="radio" id="laki" name="gender" value="laki-laki"><label for="laki">Laki-Laki</label>
+                    <input type="radio" id="pr" name="gender" value="perempuan"><label for="pr">Perempuan</label><br>
+                    <label for="pesan">Pesan</label><br>
+                    <textarea class="input" name="pesan" id="pesan" placeholder="Pesan" required></textarea>
+                    <br><button type="button" onclick="validateForm()">Kirim</button>
+                </fieldset>
+                
+                <!-- Tampilan result setelah form dikirim -->
+                <aside class="result-form">
+                    <p><b>Nama</b>: <span id="resultName"></span></p>
+                    <p><b>Tanggal Lahir</b>: <span id="resultDate"></span></p>
+                    <p><b>Jenis Kelamin</b>: <span id="resultGender"></span></p>
+                    <p><b>Pesan</b>: <span id="resultPesan"></span></p>
+                </aside>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer konten -->
+    <footer>
+        <p>&copy; 2025 Faiz. All right reserved.</p>
+    </footer>
+
+    <!-- JavaScript external -->
+    <script src="/js/script.js"></script>
+
+</body>
+</html>
