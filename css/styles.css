@@ -56,6 +56,9 @@ header{
 #about h1{
     text-align:center;
 }
+#about p{
+    text-align:center;
+}
 
 #contact{
     margin: 10px;
@@ -63,6 +66,9 @@ header{
 }
 #contact h1{
     text-align:center;
+}
+#contact p{
+   text-align:center;
 }
 .form-field{
     display:flex;
