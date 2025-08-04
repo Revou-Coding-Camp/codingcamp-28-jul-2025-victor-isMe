@@ -63,9 +63,8 @@ header{
     flex-wrap: wrap;
     gap:2%;
 }
-#about h2 img{
-    width: 300px;
-    padding:5px;
+#about img{
+    width: 45%;
 }
 #about h2{
     margin-top:14px;
@@ -119,4 +118,5 @@ footer p{
     margin:0;
     text-align:center;
 }
+
 
