@@ -5,10 +5,10 @@ body{
     font-family:sans-serif;
 }
 
+/* Header Section */
 header{
     border-bottom: 1px solid black;
 }
-
 .logo{
     border:1px solid black;
     border-radius: 45%;
@@ -16,7 +16,6 @@ header{
     text-decoration: none;
     font-weight: bolder;
 }
-
 #navbarNav{
     justify-content: flex-end;
 }
@@ -29,6 +28,7 @@ header{
 
 }
 
+/* Home Section */
 #home{
     margin: 10px;
 }
@@ -49,6 +49,7 @@ header{
     margin:0 auto;
 }
 
+/* About Section */
 #about{
     margin: 10px;
     min-height: 500px;
@@ -56,19 +57,32 @@ header{
 #about h1{
     text-align:center;
 }
-#about p{
-    text-align:center;
+.serifikat{
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+    gap:2%;
+}
+#about h2 img{
+    width: calc(100%/3);
+    padding:5px;
+}
+#about h2{
+    margin-top:14px;
+}
+.none{
+    height:3px;
+    width: 14px;
+    background-color: black;
 }
 
+/* Contact Section */
 #contact{
     margin: 10px;
     min-height: 500px;
 }
 #contact h1{
     text-align:center;
-}
-#contact p{
-   text-align:center;
 }
 .form-field{
     display:flex;
@@ -94,6 +108,8 @@ header{
     border: 2px solid black;
 }
 
+
+/* Footer Section */
 footer{
     padding:20px 0;
     border-top:1px solid black;
@@ -102,5 +118,4 @@ footer{
 footer p{
     margin:0;
     text-align:center;
-
 }
